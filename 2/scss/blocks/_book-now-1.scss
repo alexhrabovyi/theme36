@@ -1,0 +1,52 @@
+.book-now-1-wrapper {
+    padding-top: 228px;
+    padding-bottom: 128px;
+    @include background-cover(url(../img/book-now-1_bg.jpg));
+
+    @include media-s {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+}
+
+.book-now-block {
+    width: 648px;
+    background: rgba(35, 35, 35, 0.9);
+    padding: 44px 32px;
+
+    &__desc {
+        @include josephine;
+        font-weight: 300;
+        font-size: 20px;
+        letter-spacing: 0.1em;
+        color: $white;
+    }
+
+    &__subtitle {
+        margin: 16px 0;
+    }
+
+    &__text {
+        margin-bottom: 24px;
+    }
+
+    @include media-l {
+        width: 558px;
+    }
+
+    @include media-m {
+        width: 550px;
+    }
+
+    @include media-s {
+        width: 100%;
+    }
+}
+
+.subtitle_small {
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: normal;
+    text-align: unset;
+}
+

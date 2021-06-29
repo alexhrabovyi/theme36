@@ -1,0 +1,159 @@
+@font-face {
+    font-family: 'icon-font';
+    src:  url('../fonts/icon-font.eot?vlvwzc');
+    src:  url('../fonts/icon-font.eot?vlvwzc#iefix') format('embedded-opentype'),
+      url('../fonts/icon-font.ttf?vlvwzc') format('truetype'),
+      url('../fonts/icon-font.woff?vlvwzc') format('woff'),
+      url('../fonts/icon-font.svg?vlvwzc#icon-font') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+  
+i {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icon-font' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+  
+.icon-trefa:before {
+    content: "\e900";
+}
+
+.icon-bubna:before {
+    content: "\e901";
+}
+
+.icon-chirva:before {
+    content: "\e902";
+}
+
+.icon-pika:before {
+    content: "\e903";
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+/* background: url(../img/back.png) center center no-repeat;
+    background-size: cover; */
+
+@keyframes rotate {
+    from {
+        transform: rotateY(0deg);
+    }
+
+    50% {
+        transform: rotateY(90deg);
+        color: transparent;
+    }
+
+    to {
+        transform: rotateY(180deg);
+        background: url(../img/back.png) center center no-repeat;
+        background-size: cover;
+        color: transparent;
+    }
+}
+
+*, ::after, ::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(199, 199, 199);
+}
+
+.cards-box {
+    padding: 50px 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 300px;
+    height: 420px;
+    border-radius: 5%;
+    overflow: hidden;
+    background: rgb(255, 255, 255);
+    position: relative;
+    padding: 10px;
+    box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.31);
+    margin: 0 30px 50px 30px;
+}
+
+.card_black {
+    color: rgb(0, 0, 0);
+}
+
+.card_red {
+    color: rgb(201, 0, 0);
+}
+
+.card:hover {
+    animation-name: rotate;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+}
+
+.value {
+    position: absolute;
+    font-family: 'Anton', sans-serif;
+    font-size: 150px;
+    top: -10px;
+    letter-spacing: -0.15em;
+}
+
+.suit {
+    font-size: 80px;
+    position: absolute;
+    top: 150px;
+}
+
+.suit_bottom {
+    top: 330px;
+}
+
+.suits-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 110px;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+}
+
+.small-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.big-icon {
+    position: absolute;
+    font-size: 180px;
+    top: 135px;
+    right: 60px;
+}
+
+.biggest-icon {
+    position: absolute;
+    font-size: 200px;
+    top: 140px;
+    left: 50px;
+}
+
+.icon_margin {
+    margin: 0 35px 15px 35px;
+}

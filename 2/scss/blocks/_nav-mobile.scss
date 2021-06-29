@@ -1,0 +1,98 @@
+.mob-links-block {
+    padding: 32px 0;
+    height: 216px;
+    width: 100%;
+    display: none;
+    position: absolute;
+    top: 84px;
+    transition: all 0.3s;
+    opacity: 0;
+    background: $blue;
+    pointer-events: none;
+
+    &__link {
+        @include aleo;
+        font-weight: 400;
+        font-size: 14px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: $white;
+
+        &:active {
+            color: $white-hover;
+        }
+    }
+
+    .menu-open & {
+        opacity: 1;
+        pointer-events: initial;
+    }
+
+    @include media-xs {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+// burger styles
+
+.nav-wrapper__nav__burger {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.burger {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: none;
+
+    @include media-xs {
+        display: flex;
+    }
+}
+
+.burger_line {
+    fill: none;
+    stroke: $white;
+    stroke-width: 6;
+    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+      stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.burger_line1 {
+    stroke-dasharray: 60 207;
+    stroke-width: 6;
+}
+
+.burger_line2 {
+    stroke-dasharray: 60 60;
+    stroke-width: 6;
+}
+  
+.burger_line3 {
+    stroke-dasharray: 60 207;
+    stroke-width: 6;
+}
+  
+.burger_opened .burger_line1 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 6;
+}
+.burger_opened .burger_line2 {
+    stroke-dasharray: 1 60;
+    stroke-dashoffset: -30;
+    stroke-width: 6;
+}
+.burger_opened .burger_line3 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 6;
+}

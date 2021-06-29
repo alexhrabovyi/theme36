@@ -1,0 +1,120 @@
+.why-wrapper {
+    @include background-cover(url(../img/why_bg.jpg));
+    padding-top: 124px;
+    padding-bottom: 124px;
+
+    @include media-s {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+.why-wrapper__main {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.text-block {
+    width: 49.1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &__desc {
+        margin-bottom: 24px;
+    }
+
+    &__text {
+        margin-bottom: 32px;
+    }
+
+    @include media-l {
+        width: 48.95%;
+    }
+
+    @include media-m {
+        width: 57.9%;
+    }
+
+    @include media-s {
+        width: 100%;
+        text-align: center;
+        align-items: center
+    }
+}
+
+.desc {
+    @include aleo;
+    font-weight: 400;
+    font-size: 36px;
+    color: $white;
+}
+
+.text {
+    @include josephine;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.1em;
+    color: $white;
+}
+
+.button {
+    width: 213px;
+    height: 60px;
+    background: url(../svg/blue-rectangle.svg) left no-repeat $blue;
+    border: none;
+    @include aleo;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: $white;
+    cursor: pointer;
+    
+    &:hover, &:focus {
+        outline: none;
+        width: 250px;
+    }
+
+    &:active {
+        background: url(../svg/blue-rectangle.svg) left no-repeat $blue-active;
+    }
+}
+
+
+.img-block {
+    width: 32.12%;
+    display: flex;
+    flex-direction: column;
+
+    &__img {
+        width: 82.5%;
+
+        @include media-s {
+            width: 48.3%;
+        }
+    }
+
+    &__img_margin {
+        align-self: flex-end;
+        margin-top: 16px;
+
+        @include media-s {
+            margin: 0;
+        }
+    }
+
+    @include media-l {
+        width: 40.4%;
+    }
+
+    @include media-s {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        order: -1;
+        margin-bottom: 32px;
+    }
+}

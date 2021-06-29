@@ -1,0 +1,47 @@
+.footer-wrapper {
+    padding-top: 80.5px;
+    padding-bottom: 80.5px;
+    background: $black;
+}
+
+.footer-wrapper__footer {
+    @include flex-column;
+
+    &__logo-link {
+        margin-bottom: 8px;
+    }
+
+    &__desc {
+        @include josephine;
+        font-weight: 400;
+        font-size: 14px;
+        letter-spacing: 0.2em;
+        color: $white;
+    }
+
+    &__social-links {
+        margin-top: 22px;
+        @include flex-center;
+        flex-wrap: wrap;
+    }
+}
+
+.social-links__social-link {
+    margin: 0 16px;
+}
+
+.social-link {
+    font-size: 32px;
+    color: $white;
+    text-decoration: none;
+    transition: 0s;
+
+    &:hover, &:focus {
+        outline: none;
+        color: $blue;
+    }
+
+    &:active {
+        color: $blue-active;
+    }
+}

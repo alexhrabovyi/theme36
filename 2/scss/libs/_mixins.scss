@@ -1,0 +1,51 @@
+// media mixins
+
+@mixin media-l {
+    @media (max-width: 1360px) { @content; }
+}
+
+@mixin media-m {
+    @media (max-width: 1024px) { @content; }
+}
+
+@mixin media-s {
+    @media (max-width: 768px) { @content; }
+}
+
+@mixin media-xs {
+    @media (max-width: 576px) { @content; }
+}
+
+// flex mixins
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin flex-center-center {
+    @include flex-center;
+    align-items: center;
+}
+
+@mixin flex-column {
+    @include flex-center-center;
+    flex-direction: column;
+}
+
+// background mixin
+
+@mixin background-cover($value) {
+    background: $value center center no-repeat;
+    background-size: cover;
+}
+
+// fonts mixins
+
+@mixin josephine {
+    font-family: "Josefin Sans", sans-serif;
+}
+
+@mixin aleo {
+    font-family: 'Aleo', serif; 
+}
