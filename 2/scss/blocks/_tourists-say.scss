@@ -1,0 +1,52 @@
+.tourists-say-wrapper {
+    @include background-cover(url(../img/tourists-say_bg.jpg));
+    padding-top: 152.5px;
+    padding-bottom: 152.5px;
+
+    @include media-s {
+        padding-top: 60px;
+        padding-bottom: 120px;
+    }
+}
+
+.tourists-say-wrapper__article {
+    @include flex-column;
+
+    &__desc {
+        margin-bottom: 60px;
+    }
+}
+
+.retelling-block {
+    display: flex;
+    flex-wrap: wrap;
+
+    &__img {
+        width: 33%;
+        background: url(../img/tourists-say_img.jpg) right top no-repeat;
+        background-size: cover;
+
+        @include media-s {
+            width: 100%;
+            height: 336px;
+        }
+    }
+}
+
+.retelling-block__text-block {
+    background: $dark-grey;
+    padding: 48px 60px 48px 65px;
+    width: 67%;
+
+    &__subtitle {
+        margin-bottom: 16px;
+    }
+
+    @include media-s {
+        width: 100%;
+    }
+}
+
+.text__icon {
+    color: $blue;
+}

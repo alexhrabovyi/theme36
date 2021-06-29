@@ -1,0 +1,27 @@
+// blocks
+
+@import "blocks/header";
+@import "blocks/nav";
+@import "blocks/nav-mobile";
+@import "blocks/why";
+@import "blocks/steps";
+@import "blocks/book-now-1";
+@import "blocks/book-now-2";
+@import "blocks/tourists-say";
+@import "blocks/footer";
+
+// libs
+
+@import "libs/mixins";
+@import "libs/colors";
+@import "libs/fonts";
+@import "libs/normalize";
+
+// properties for all elements
+
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.1s ease-in;
+}

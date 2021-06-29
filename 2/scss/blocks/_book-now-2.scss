@@ -1,0 +1,15 @@
+.book-now-2-wrapper {
+    padding-top: 228px;
+    padding-bottom: 128px;
+    @include background-cover(url(../img/book-now-2_bg.jpg));
+
+    &__article {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    @include media-s {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+}

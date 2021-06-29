@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhromaon</title>
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon/favicon.ico">
+</head>
+
+<body>
+    <section class="header-wrapper">
+        <header class="header-wrapper__header">
+            <h1 class="title header-wrapper__header__title wow fadeInLeft">Bhromaon</h1>
+            <p class="subtitle header-wrapper__header__subtitle wow fadeInRight">Safe Travel Anywhere</p>
+            <form class="form header-wrapper__header__form wow fadeInLeft" action="#">
+                <input class="input form__input" type="search" name="Search"
+                    placeholder="Search Your Travel Destination">
+                <button class="button-submit form__button-submit">
+                    <i class="button-submit__icon icon-search"></i>Search
+                </button>
+            </form>
+            <div class="scroll-block header-wrapper__header__scroll-block">
+                <p class="scroll-block__text">Scroll Down</p>
+                <i class="scroll-block__icon icon-chevron-down"></i>
+            </div>
+        </header>
+    </section>
+    <section class="nav-wrapper container">
+        <nav class="nav-wrapper__nav">
+            <a class="logo-link nav-wrapper__nav__logo-link" href="#" alt="Bhromaon">Bhromaon</a>
+            <div class="links-block nav-wrapper__nav__links-block">
+                <a class="links-block__link" href="#why-section" alt="Who We Are">Who We Are</a>
+                <a class="links-block__link" href="#what-we-do-section" alt="What We Do">What We Do</a>
+                <a class="links-block__link" href="#travel-with-us-section" alt="Travel With Us">Travel With Us</a>
+                <a class="links-block__link" href="#contact-us-section" alt="Contact Us">Contact Us</a>
+            </div>
+            <button class="burger nav-wrapper__nav__burger"
+                onclick="this.classList.toggle('burger_opened');this.setAttribute('aria-expanded', this.classList.contains('burger_opened'))"
+                aria-label="Main Menu">
+                <svg width="120" height="60" viewBox="0 0 100 100">
+                    <path class="burger_line burger_line1"
+                        d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                    <path class="burger_line burger_line2" d="M 20,50 H 80" />
+                    <path class="burger_line burger_line3"
+                        d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                </svg>
+            </button>
+            <div class="mob-links-block mobile-nav__mob-links-block menu-open">
+                <a class="mob-links-block__link" href="#why-section" alt="Who We Are">Who We Are</a>
+                <a class="mob-links-block__link" href="#what-we-do-section" alt="What We Do">What We Do</a>
+                <a class="mob-links-block__link" href="#travel-with-us-section" alt="Travel With Us">Travel With
+                    Us</a>
+                <a class="mob-links-block__link" href="#contact-us-section" alt="Contact Us">Contact Us</a>
+            </div>
+        </nav>
+    </section>
+    <section class="why-wrapper container">
+        <main class="why-wrapper__main" id="why-section">
+            <div class="text-block why-wrapper__main__text-block wow fadeInLeft">
+                <h3 class="desc text-block__desc">Why Choose Us</h3>
+                <p class="text text-block__text">
+                    Tion and dislike men who are so beguiled and demoralized by desire by the charms of pleasure of the
+                    moment, so blinded by desire, that they cannot foresee
+                </p>
+                <p class="text text-block__text">
+                    Ddislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded
+                    by desire, that.
+                </p>
+                <button class="button text-block__button">Explore Places</button>
+            </div>
+            <div class="img-block why-wrapper__main__img-block wow fadeInRight">
+                <img class="img-block__img" src="img/why_img-2.jpg" alt="House near the lake">
+                <img class="img-block__img img-block__img_margin" src="img/why_img-1.jpg" alt="Blue Mountains">
+            </div>
+        </main>
+    </section>
+    <section class="steps-wrapper container" id="what-we-do-section">
+        <article class="steps-wrapper__article">
+            <div class="icon-blocks steps-wrapper__article__icon-blocks">
+                <div class="icon-block icon-blocks__icon-block">
+                    <div class="icon-block__icon-border">
+                        <i class="icon-search icon-block__icon-border__search"></i>
+                    </div>
+                    <h3 class="desc icon-block__desc">Search Places</h3>
+                </div>
+                <div class="icon-block icon-block_margin icon-blocks__icon-block">
+                    <div class="icon-block__icon-border">
+                        <i class="icon-check-circle icon-block__icon-border__circle"></i>
+                    </div>
+                    <h3 class="desc icon-block__desc">Select Places</h3>
+                </div>
+                <div class="icon-block icon-blocks__icon-block">
+                    <div class="icon-block__icon-border">
+                        <i class="icon-thumbs-up icon-block__icon-border__up"></i>
+                    </div>
+                    <h3 class="desc icon-block__desc">Book & Enjoy</h3>
+                </div>
+                <img class="steps-wrapper__article__line-icon" src="svg/line.svg">
+            </div>
+        </article>
+    </section>
+    <section class="book-now-1-wrapper container" id="travel-with-us-section">
+        <article class="book-now-1-wrapper__article">
+            <div class="book-now-block book-now-1-wrapper__article__book-now-block wow fadeInLeft">
+                <p class="book-now-block__desc">Spain</p>
+                <h5 class="subtitle subtitle_small book-now-block__subtitle">Grand Spain Madrid</h5>
+                <p class="text book-now-block__text">
+                    But I must explain to you how all this mistaken idea of account to denouncing pleasure and praising
+                    pain was account born and I account will give you a complete account of the system
+                </p>
+                <button class="button book-now-block__button">Book now</button>
+            </div>
+        </article>
+    </section>
+    <section class="book-now-2-wrapper container">
+        <article class="book-now-2-wrapper__article">
+            <div class="book-now-block book-now-1-wrapper__article__book-now-block wow fadeInRight">
+                <p class="book-now-block__desc">Spain</p>
+                <h5 class="subtitle subtitle_small book-now-block__subtitle">Grand Spain Madrid</h5>
+                <p class="text book-now-block__text">
+                    But I must explain to you how all this mistaken idea of account to denouncing pleasure and praising
+                    pain was account born and I account will give you a complete account of the system
+                </p>
+                <button class="button book-now-block__button">Book now</button>
+            </div>
+        </article>
+    </section>
+    <section class="tourists-say-wrapper container" id="contact-us-section">
+        <article class="tourists-say-wrapper__article">
+            <h3 class="desc tourists-say-wrapper__article__desc wow fadeInLeft">What Our Tourists Say</h3>
+            <div class="retelling-block tourists-say-wrapper__article__retelling-block wow fadeInRight">
+                <div class="retelling-block__img"></div>
+                <div class="retelling-block__text-block">
+                    <h5 class="subtitle subtitle_small retelling-block__text-block__subtitle">Sam Sumon</h5>
+                    <p class="text retelling-block__text-block__text">
+                        <i class="icon-quote-left text__icon"></i>
+                        But I must explain to you how all this mistaken idea of account to denouncinpleasure and
+                        praising pain But I must explain to you how all this mistaken idea of account to nai denouncing
+                        pleasure and praising pain was account born and I account will give you a complete account of
+                        the system was account born and I account will give you a nai the complete account of the system
+                    </p>
+                </div>
+            </div>
+        </article>
+    </section>
+    <section class="footer-wrapper">
+        <footer class="footer-wrapper__footer">
+            <a class="logo-link footer-wrapper__footer__logo-link wow fadeInLeft" href="#" alt="Bhromaon">
+                Bhromaon
+            </a>
+            <p class="footer-wrapper__footer__desc wow fadeInRight">Safe Travel Anywhere</p>
+            <div class="social-links footer-wrapper__footer__social-links wow fadeInLeft">
+                <a class="social-link social-links__social-link" href="#" alt="Facebook">
+                    <i class="icon-facebook"></i>
+                </a>
+                <a class="social-link social-links__social-link" href="#" alt="Twitter">
+                    <i class="icon-twitter"></i>
+                </a>
+                <a class="social-link social-links__social-link" href="#" alt="LinkedIn">
+                    <i class="icon-linkedin"></i>
+                </a>
+                <a class="social-link social-links__social-link" href="#" alt="YouTube">
+                    <i class="icon-youtube"></i>
+                </a>
+                <a class="social-link social-links__social-link" href="#" alt="Pinterest">
+                    <i class="icon-pinterest"></i>
+                </a>
+            </div>
+        </footer>
+    </section>
+    <script src="js/wow.min.js"></script>
+    <script src="js/burger-script.js"></script>
+</body>
+
+</html>
